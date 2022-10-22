@@ -1,9 +1,65 @@
 <section class="px-4">
 
-    <div class="#F2F2F2">
+    <div class="bg-[#F2F2F2] px-3 rounded-t-xl pt-11 pb-6">
         <!-- items -->
-        <div class="">
+        <div class="w-full grid gap-8">
+            <!-- products -->
+            <div>
+                <div id="accordion-collapse" data-accordion="collapse">
+                    <h2 id="accordion-collapse-heading-1">
+                        <button type="button" class="flex items-center justify-between w-full text-lefτ" data-accordion-target="#accordion-collapse-body-1" aria-expanded="true" aria-controls="accordion-collapse-body-1">
+                            <span class="font-[700] text-sm text-black">Προϊόντα</span>
+                            <svg data-accordion-icon class="rotate-180 shrink-0" width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 6L6 1L11 6" stroke="black" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        </button>
+                    </h2>
+                    <div id="accordion-collapse-body-1" class="hidden pt-5" aria-labelledby="accordion-collapse-heading-1">
+                        <ul class="space-y-3 list-none text-[#666666] font-[400] text-sm">
+                            <li>iPhone</li>
+                            <li>iPad</li>
+                            <li>Macbook/Mac</li>
+                            <li>Watch</li>
+                            <li>Tools</li>
+                            <li>Accessories</li>
+                            <li>
+                                <div class="flex items-center gap-1">
+                                    <p>Know How</p>
+                                    <p class="bg-[#00B2A9] rounded-sm py-1 px-3 text-white text-xs font-[400]">Blog</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- menu -->
+            <div>
+                <ul class="list-none text-black font-[700] text-sm w-full">
+                    <li class="pb-8">Επικοινωνία ></li>
+                    <li class="pb-8">Σύνδεση ή εγγραφή</li>
+                    <li class="pb-8">Εύρεση παραγγελίας ></li>
+                    <li class="pb-4">Σχετικά με το FixParts ></li>
+                    <li class="bg-gradient-to-tl from-[#00B2A9] to-[#00E1D6] rounded py-3 pl-2 w-full">FixParts για επαγγελματίες ></li>
+                </ul>
+            </div>
+        </div>
 
+        <!-- social -->
+        <div class="mt-16">
+            <app-social></app-social>
+        </div>
+
+        <!-- usefull links -->
+        <div class="w-full mt-6">
+            <p class="text-[#666666] text-xs font-[400] text-center"><span>Όροι χρήσης</span> | <span>Πολιτική Απορρήτου</span> | <span>Cookies</span></p>
+        </div>
+
+        <!-- copyrights -->
+        <div class="w-full mt-4">
+            <p class="text-center text-[#808080] text-[10px] font-[400]">© 2022 FixParts. All Rights and Lefts reserved.</p>
+        </div>
+
+        <!-- payments -->
+        <div class="mt-4">
+            <app-payments></app-payments>
         </div>
     </div>
 
