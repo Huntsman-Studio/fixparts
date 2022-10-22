@@ -1,0 +1,91 @@
+<section *ngIf="menu" class="bg-[#E6EEED] w-full absolute top-0 left-0 pt-4 px-6 h-screen max-h-screen">
+    <!-- header -->
+    <div class="flex justify-between items-center">
+        <div (click)="closeMenu()">
+            <svg width="10" height="18" viewBox="0 0 10 18" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9 16.5L1.5 9L9 1.5" stroke="#8093A7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
+        <div>
+            <svg width="32" height="30" viewBox="0 0 32 30" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M31.0499 15.7278L16.2783 30H20.902L31.0499 20.1952V15.7278Z" fill="#00B2A9"/><path d="M31.0494 9.74048L10.0811 30H14.7047L31.0494 14.2079V9.74048Z" fill="#00B2A9"/><path d="M29.5367 3.69515L17.387 15.4341L15.9743 16.7991L3.82549 28.538C2.91788 27.9385 2.13375 27.1808 1.51318 26.3039L27.2244 1.46191C28.1319 2.06124 28.916 2.81855 29.5367 3.69515Z" fill="#00B2A9"/><path d="M10.1479 0L0 9.80484V14.2722L14.7716 0H10.1479Z" fill="#00B2A9"/><path d="M31.0496 8.22687L22.0761 16.8979L17.4871 21.3308L8.51088 29.9973C7.22552 29.9658 5.96333 29.6596 4.81494 29.1009L30.119 4.65225C30.6988 5.7627 31.0166 6.98353 31.0496 8.22687Z" fill="#00B2A9"/><path d="M16.3447 0L0 15.7921V20.2595L20.9684 0H16.3447Z" fill="#00B2A9"/><path d="M26.2346 0.899182L0.930552 25.3478C0.35129 24.2385 0.0334967 23.0189 0 21.7768L22.5387 0.00280762C23.824 0.0343267 25.0862 0.340445 26.2346 0.899182Z" fill="#00B2A9"/><path d="M31.0499 30V21.7151L22.4751 30H31.0499Z" fill="#00B2A9"/><path d="M0 8.2858L8.57571 0H0V8.2858Z" fill="#00B2A9"/></svg>
+        </div>
+        <div></div>
+    </div>
+    <!-- nav -->
+    <div class="mt-6">
+        <nav class="grid">
+            <ul class="list-none text-black font-[400] text-base space-y-1">
+                <li>
+                   <div class="flex justify-between items-center">
+                        <div class="flex justify-start items-center gap-6">
+                            <img src="assets/images/nav/iphone_icon_menu.png" alt="iPhoneIconMenu" lazyload/>
+                            <h3>iPhone</h3>
+                        </div>
+                        <div>
+                            <svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 1L6 6L1 11" stroke="#8093A7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        </div>
+                   </div> 
+                </li>
+                <li>
+                   <div class="flex justify-between items-center">
+                        <div class="flex justify-start items-center gap-6">
+                            <img src="assets/images/nav/mac_icon_menu.png" alt="MacIconMenu" lazyload/>
+                            <h3>Macbook/Mac</h3>
+                        </div>
+                        <div>
+                            <svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 1L6 6L1 11" stroke="#8093A7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        </div>
+                   </div> 
+                </li>
+                <li>
+                   <div class="flex justify-between items-center">
+                        <div class="flex justify-start items-center gap-6">
+                            <img src="assets/images/nav/ipad_icon_menu.png" alt="iPadIconMenu" lazyload/>
+                            <h3>iPad</h3>
+                        </div>
+                        <div>
+                            <svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 1L6 6L1 11" stroke="#8093A7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        </div>
+                   </div> 
+                </li>
+                <li>
+                   <div class="flex justify-between items-center">
+                        <div class="flex justify-start items-center gap-6">
+                            <img src="assets/images/nav/watch_icon_menu.png" alt="WatchIconMenu" lazyload/>
+                            <h3>Watch</h3>
+                        </div>
+                        <div>
+                            <svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 1L6 6L1 11" stroke="#8093A7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        </div>
+                   </div> 
+                </li>
+                <li>
+                   <div class="flex justify-between items-center">
+                        <div class="flex justify-start items-center gap-6">
+                            <img src="assets/images/nav/tools_icon_menu.png" alt="ToolsIconMenu" lazyload/>
+                            <h3>Tools</h3>
+                        </div>
+                        <div>
+                            <svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 1L6 6L1 11" stroke="#8093A7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        </div>
+                   </div> 
+                </li>
+                <li>
+                   <div class="flex justify-between items-center">
+                        <div class="flex justify-start items-center gap-6">
+                            <img src="assets/images/nav/accessories_icon_menu.png" alt="AccessoriesIconMenu" lazyload/>
+                            <h3>Accessories</h3>
+                        </div>
+                        <div>
+                            <svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 1L6 6L1 11" stroke="#8093A7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        </div>
+                   </div> 
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <!-- close -->
+    <div class="flex justify-center items-center mt-10">
+        <div class="bg-[#CCE2FA] h-16 w-16 rounded-xl flex justify-center items-center" (click)="closeMenu()">
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M25 7L7 25" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M25 25L7 7" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
+    </div>
+</section>

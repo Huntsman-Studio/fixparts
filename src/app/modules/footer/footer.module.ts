@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { FooterComponent } from './footer.component';
 import { SocialModule } from './social/social.module';
 import { PaymentsModule } from './payments/payments.module';
+import { RouterModule } from '@angular/router';
 
 
 
@@ -13,7 +14,8 @@ import { PaymentsModule } from './payments/payments.module';
   imports: [
     CommonModule,
     SocialModule,
-    PaymentsModule
+    PaymentsModule,
+    RouterModule
   ],
   exports: [
     FooterComponent

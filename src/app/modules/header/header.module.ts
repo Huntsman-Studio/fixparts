@@ -1,6 +1,8 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { HeaderComponent } from './header.component';
+import { MobileNavModule } from './mobile-nav/mobile-nav.module';
+import { RouterModule } from '@angular/router';
 
 
 
@@ -9,10 +11,13 @@ import { HeaderComponent } from './header.component';
     HeaderComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    MobileNavModule,
+    RouterModule
   ],
   exports: [
-    HeaderComponent
+    HeaderComponent,
+    MobileNavModule
   ]
 })
 export class HeaderModule { }

@@ -1,7 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { HeaderModule } from './header/header.module';
-import { PagesModule } from './pages/pages.module';
 import { FooterModule } from './footer/footer.module';
 
 
@@ -11,13 +10,11 @@ import { FooterModule } from './footer/footer.module';
   imports: [
     CommonModule,
     HeaderModule,
-    FooterModule,
-    PagesModule,
+    FooterModule
   ],
   exports: [
     HeaderModule,
-    FooterModule,
-    PagesModule,
+    FooterModule
   ]
 })
 export class ModulesModule { }

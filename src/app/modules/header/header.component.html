@@ -3,7 +3,7 @@
     <!-- left-side -->
     <div>
         <div class="flex items-center justify-center gap-4">
-            <div class="bg-[#F2F2F2] w-10 h-10 rounded-md flex justify-center items-center">
+            <div class="bg-[#F2F2F2] w-10 h-10 rounded-md flex justify-center items-center cursor-pointer" (click)="showMenu()">
                 <img src="assets/images/icons/hamburger.svg" alt="Menu" lazyload/>
             </div>
             <div>
@@ -14,7 +14,7 @@
 
     <!-- center -->
     <div>
-        <div class="flex items-center justify-center">
+        <div [routerLink]="['/']" class="flex items-center justify-center">
             <img src="assets/images/icons/fixparts_logomark.svg" alt="FixParts_LogoMark" lazyload/>
         </div>
     </div>
